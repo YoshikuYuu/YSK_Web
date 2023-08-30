@@ -1,6 +1,65 @@
-body {
-    background: rgb(215, 250, 220);
-    font-family: sans-serif;
+/* Alice */
+@font-face {
+    font-family: "Alice";
+    src: url('fonts/alice/Alice-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Lora */
+@font-face {
+    font-family: "Lora";
+    src: url('fonts/lora/static/Lora-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url('fonts/lora/static/Lora-Bold.ttf') format('truetype');
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url('fonts/lora/static/Lora-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+  }
+
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E; /* Yellow */
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+      background-color: #B2D6FF; /* Blue */
+    }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: Lora, Verdana, serif;
+    font-weight: 700;
+}
+
+.headline {
+    font-family: Alice, serif;
+    font-size: 3rem;
 }
 
 .header {
@@ -15,16 +74,9 @@ body {
     clear: both;
 }
 
-#hopper-pic {
-    width: 100px;
-    float: left;
-    margin-right: 6px;
-    margin-bottom: 6px;
-
-}
-
-#hopper-links {
-    float: right;
-    width: 30%;
-    margin-left: 10px;
+#landing_splash_block {
+    margin-bottom: 30px;
+    padding: 20px 45px 80px;
+    height: 400px;
+    background-image: url(images/kaltsitlab.jpg);
 }
