@@ -46,26 +46,44 @@
     }
   }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    background: rgb(42, 42, 35);
+    height: 32px;
+    padding: 8px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.landing_splash_block {
+    display: flex;
+}
+
+#landing_splash_image {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.name {
+  font-family: Alice, serif;
+  font-size: 3rem;
 }
 
 p {
-    font-family: Lora, Verdana, serif;
-    font-weight: 700;
-}
-
-.headline {
-    font-family: Alice, serif;
-    font-size: 3rem;
-}
-
-.header {
-    background-color: rgb(23, 66, 23);
-    color: white;
-    padding: 5px 10px;
+  font-family: Lora, Verdana, serif;
+  font-weight: 700;
 }
 
 .footer {
@@ -74,9 +92,11 @@ p {
     clear: both;
 }
 
+.introduction {
+    margin: auto;
+    padding: 32px;
+}
+
 #landing_splash_block {
-    margin-bottom: 30px;
-    padding: 20px 45px 80px;
-    height: 400px;
-    background-image: url(images/kaltsitlab.jpg);
+
 }
