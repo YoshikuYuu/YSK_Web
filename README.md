@@ -1,2 +1,2 @@
 # YSK_Web
-The personal website of Joseph Yu (GitHub:- YoshikuYuu)
+The personal website of Joseph Yu (GitHub: YoshikuYuu)
