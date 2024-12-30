@@ -1,82 +1,119 @@
 /* Alice */
 @font-face {
-    font-family: "Alice";
-    src: url('fonts/alice/Alice-Regular.ttf') format('truetype');
-    font-weight: 400;
+  font-family: "Alice";
+  src: url('fonts/alice/Alice-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
 
 /* Lora */
 @font-face {
-    font-family: "Lora";
-    src: url('fonts/lora/static/Lora-Regular.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Lora";
+  src: url('fonts/lora/static/Lora-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lora";
-    src: url('fonts/lora/static/Lora-Bold.ttf') format('truetype');
-    font-style: bold;
+  font-family: "Lora";
+  src: url('fonts/lora/static/Lora-Bold.ttf') format('truetype');
+  font-style: bold;
 }
 
 @font-face {
-    font-family: "Lora";
-    src: url('fonts/lora/static/Lora-Italic.ttf') format('truetype');
-    font-style: italic;
+  font-family: "Lora";
+  src: url('fonts/lora/static/Lora-Italic.ttf') format('truetype');
+  font-style: italic;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-    body {
-      background-color: #F09A9D; /* Red */
-    }
+  html {
+    font-size: 14px;
   }
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
 
   /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-      background-color: #F5CF8E; /* Yellow */
-    }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  html {
+    font-size: 16px;
   }
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
   
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    body {
-      background-color: #B2D6FF; /* Blue */
-    }
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  html {
+    font-size: 16px; /* Default root font size */
   }
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
 
-body {
-  margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.page {
+  height: 100vh;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
+  justify-content: start;
 }
 
 .navbar {
-    display: flex;
-    background: rgb(42, 42, 35);
-    height: 32px;
-    padding: 8px;
+  display: flex;
+  flex: 0 1 auto;
+  background: rgb(42, 42, 35);
+  height: 32px;
+  width: 100%;
+  padding: 8px;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 8px;
+  color: white;
+  font-family: Lora, Verdana, serif;
+  font-style: bold;
+  text-decoration: none;
+  padding: 8px;
 }
 
 .landing_splash_block {
-    display: flex;
+  padding: 32px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
-#landing_splash_image {
-    width: 100vw;
-    height: 50vh;
-    object-fit: cover;
-    object-position: center;
+.portrait_container {
+  display: flex;
+  flex: 0 1 400px;
+  clip-path: circle(40% at 50% 50%);
+}
+
+#portrait {
+  width: 100%;
+}
+
+.introduction {
+  display: flex;
+  flex: 1 1 40vw;
+  flex-direction: column;
+  padding: 32px;
 }
 
 .name {
+  padding-bottom: 32px;
   font-family: Alice, serif;
   font-size: 3rem;
 }
@@ -87,16 +124,8 @@ p {
 }
 
 .footer {
-    background-color: rgb(186, 222, 187);
-    padding: 6px;
-    clear: both;
-}
-
-.introduction {
-    margin: auto;
-    padding: 32px;
-}
-
-#landing_splash_block {
-
+  display: flex;
+  background-color: rgb(186, 222, 187);
+  padding: 6px;
+  justify-content: center;
 }
