@@ -31,7 +31,7 @@
     font-size: 14px;
   }
   body {
-    background-color: #F09A9D; /* Red */
+    background-color: #dacc96; /* Light Yellow */
   }
 }
 
@@ -41,7 +41,7 @@
     font-size: 16px;
   }
   body {
-    background-color: #F5CF8E; /* Yellow */
+    background-color: #e8ddaf; /* Yellow */
   }
 }
   
@@ -51,13 +51,35 @@
     font-size: 16px; /* Default root font size */
   }
   body {
-    background-color: #B2D6FF; /* Blue */
+    background-color: #eedb92; /* Blue */
   }
 }
 
 * {
   margin: 0px;
   padding: 0px;
+}
+
+.title {
+  padding-bottom: 32px;
+  font-family: Alice, serif;
+  font-size: 3rem;
+}
+
+p {
+  font-family: Lora, Verdana, serif;
+  font-weight: 700;
+}
+
+a {
+  color: #8671a7;
+  font-family: Lora, Verdana, serif;
+  font-style: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #645086;
 }
 
 .page {
@@ -85,9 +107,9 @@
   padding: 8px;
 }
 
-.landing_splash_block {
+.row_container {
   padding: 32px;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -105,22 +127,11 @@
   width: 100%;
 }
 
-.introduction {
+#introduction {
   display: flex;
   flex: 1 1 40vw;
   flex-direction: column;
   padding: 32px;
-}
-
-.name {
-  padding-bottom: 32px;
-  font-family: Alice, serif;
-  font-size: 3rem;
-}
-
-p {
-  font-family: Lora, Verdana, serif;
-  font-weight: 700;
 }
 
 .footer {
