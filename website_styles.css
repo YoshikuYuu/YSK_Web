@@ -28,7 +28,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
   body {
     background-color: #dacc96; /* Light Yellow */
@@ -38,7 +38,7 @@
   /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
   body {
     background-color: #e8ddaf; /* Yellow */
@@ -48,7 +48,7 @@
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   html {
-    font-size: 16px; /* Default root font size */
+    font-size: 18px; /* Default root font size */
   }
   body {
     background-color: #eedb92; /* Blue */
@@ -69,17 +69,7 @@
 p {
   font-family: Lora, Verdana, serif;
   font-weight: 700;
-}
-
-a {
-  color: #8671a7;
-  font-family: Lora, Verdana, serif;
-  font-style: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #645086;
+  padding-bottom: 16px;
 }
 
 .page {
@@ -132,6 +122,41 @@ a:hover {
   flex: 1 1 40vw;
   flex-direction: column;
   padding: 32px;
+}
+
+#links {
+  gap: 1rem;
+}
+
+.icon-button {
+  display: flex;
+  text-decoration: none;
+}
+
+.icon-button img {
+  width: 1.5rem;
+}
+
+@media only screen and (min-width: 961px) {
+  /* Icon hover animations */
+  .icon-button:hover img {
+    transform: scale(1.1);
+  }
+  .icon-button::after {
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    opacity: 0;
+    font-family: Lora, Verdana, serif;
+    font-size: 1.25rem;
+    color: black;
+    font-style: bold;
+    transition: all 0.3s ease;
+  }
+  .icon-button:hover::after {
+    opacity: 1;
+    transform: translateX(50px);
+  }
 }
 
 .footer {
