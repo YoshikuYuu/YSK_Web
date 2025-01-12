@@ -61,7 +61,7 @@
 }
 
 .title {
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
   font-family: Alice, serif;
   font-size: 3rem;
 }
@@ -69,7 +69,7 @@
 p {
   font-family: Lora, Verdana, serif;
   font-weight: 700;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .page {
@@ -86,7 +86,7 @@ p {
   background: rgb(42, 42, 35);
   height: 32px;
   width: 100%;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .navbar a {
@@ -94,11 +94,11 @@ p {
   font-family: Lora, Verdana, serif;
   font-style: bold;
   text-decoration: none;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .row_container {
-  padding: 32px;
+  padding: 2rem;
   flex: 0 1 auto;
   display: flex;
   flex-direction: row;
@@ -109,8 +109,9 @@ p {
 
 .portrait_container {
   display: flex;
-  flex: 0 1 400px;
+  flex: 0 1 25rem;
   clip-path: circle(40% at 50% 50%);
+  margin: 2rem;
 }
 
 #portrait {
@@ -121,16 +122,17 @@ p {
   display: flex;
   flex: 1 1 40vw;
   flex-direction: column;
-  padding: 32px;
+  padding: 2rem;
 }
 
 #links {
-  gap: 1rem;
-}
-
-.icon-button {
+  flex: 0 1 auto;
   display: flex;
-  text-decoration: none;
+  flex-direction: row;
+  justify-content: right;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .icon-button img {
@@ -138,24 +140,8 @@ p {
 }
 
 @media only screen and (min-width: 961px) {
-  /* Icon hover animations */
-  .icon-button:hover img {
+  .icon-button:hover {
     transform: scale(1.1);
-  }
-  .icon-button::after {
-    content: attr(data-text);
-    position: absolute;
-    white-space: nowrap;
-    opacity: 0;
-    font-family: Lora, Verdana, serif;
-    font-size: 1.25rem;
-    color: black;
-    font-style: bold;
-    transition: all 0.3s ease;
-  }
-  .icon-button:hover::after {
-    opacity: 1;
-    transform: translateX(50px);
   }
 }
 
