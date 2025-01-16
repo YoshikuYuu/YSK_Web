@@ -11,16 +11,20 @@
       <!-- <div class="navbar">
         <a href="./index.html">Home</a>
       </div> -->
-      <div class="row_container">
+      <!-- Introduction -->
+      <div id="intro_container">
+        <!-- Portrait -->
         <div class="portrait_container">
           <img id="portrait" src="./images/portrait.jpg" alt="Picture of me">
         </div>
+        <!-- Introduction blurb -->
         <div id="introduction">
           <h1 class="title">Joseph Yu</h1>
-          <p>Hi, I'm Joseph—though I go by the pseudonym YoshikuYuu on GitHub and other platforms. I'm an undergrad studying bioinformatics and computer
-            science at UofT. When I'm not messing with yeast genomes or untangling spaghetti code, I like to dabble in creative
+          <p>Hi, I'm Joseph—I go by the pseudonym YoshikuYuu on GitHub and other platforms. I'm an undergrad studying computer
+            science and bioinformatics at UofT. When I'm not messing with yeast genomes or untangling spaghetti code, I enjoy creative
             writing and philosophy.</p>
           <p>Hello! This site is under construction at the moment; I'll be adding to it over the next few weeks :&#41;</p>
+          <!-- Links to resume, linkedin, github, etc. -->
           <div id="links">
             <a href="assets/JosephYu_Resume.pdf" target="_blank" rel="noopener noreferrer" class="icon-button">
               <img src="images/resume.png" alt="Resume">
@@ -31,16 +35,59 @@
             <a href="https://www.github.com/YoshikuYuu" target="_blank" rel="noopener noreferrer" class="icon-button">
               <img src="images/github.png" alt="GitHub">
             </a>
+            <a href="https://devpost.com/YoshikuYuu" target="_blank" rel="noopener noreferrer" class="icon-button">
+              <img src="images/devpost.png" alt="Devpost">
+            </a>
           </div>
         </div>
       </div>
-      
-    
-      <!-- <div class="footer">
-        <p>Socials Go Here</p>
-      </div> -->
+
+      <!-- Projects -->
+      <div id="proj_container">
+        <h1 class="title">Projects</h1>
+        <!-- Project display area -->
+        <div id="proj_display_container">
+          <!-- Sidebar with project tabs -->
+          <div id="proj_sidebar">
+            <button class="tab" data-project="project1">Pomogarden</button>
+            <button class="tab" data-project="project2">Atlas Adventures</button>
+            <!-- <button class="tab" data-project="project3">Project 3</button> -->
+          </div>
+
+          <!-- Content area to display project details -->
+          <div id="proj_content">
+            <div id="project1" class="project active">
+              <div class="img_container">
+                <img src="images/pomogarden.png" alt="pomogarden">
+              </div>
+              <div class="caption">
+                <h2>Pomogarden</h2>
+              </div>
+            </div>
+            <div id="project2" class="project">
+              <div class="img_container">
+                <img src="images/atlas_adventures.png" alt="pomogarden">
+              </div>
+              <div class="caption">
+                <h2>Atlas Adventures</h2>
+              </div>
+            </div>
+            <!-- <div id="project3" class="project">
+              <img src="images/project3.png" alt="Project 3 Image">
+              <div class="caption">
+                <h2>Proj 3</h2>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="credit">© 2025 made by Joseph Yu</div>
     </div>
 
-    <!-- <script src="script.js"></script> -->
+    
+
+    <script src="script.js"></script>
   </body>
 </html>
